@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_coupon_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_pay_price"
+            android:layout_alignTop="@+id/tv_pay_price"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom|center_horizontal"
+            android:hint="优惠券种类" />
+
+        <TextView
+            android:id="@+id/tv_coupon_desciption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_coupon"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom|center_horizontal"
+            android:hint="优惠券描述" />
+
+
+        <Button
+            android:id="@+id/bt_coupon_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_coupon_desciption"
+            android:text="删除" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

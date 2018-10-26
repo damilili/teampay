@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_pay_price_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_pay_price"
+            android:layout_alignTop="@+id/tv_pay_price"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="产品价格：" />
+
+        <EditText
+            android:id="@+id/tv_pay_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_pay_price_tag"
+            android:background="@null"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_pay_count_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_pay_count"
+            android:layout_alignTop="@+id/tv_pay_count"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="产品数量：" />
+
+        <EditText
+            android:id="@+id/tv_pay_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pay_price"
+            android:layout_toRightOf="@+id/tv_pay_count_tag"
+            android:background="@null"
+            android:hint="1"
+            android:inputType="number"
+            tools:text="@string/app_name" />
+
+        <Button
+            android:id="@+id/bt_pay_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pay_count"
+            android:text="删除" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
